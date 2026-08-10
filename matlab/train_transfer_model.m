@@ -1,6 +1,6 @@
-%% 迁移学习：随机森林 + 特征工程 + 独立测试集（无数据泄露，稳健校正）
+%% 迁移学习：随机森林 + 特征工程 + 独立测试集与稳健校正
 % 本代码将室外数据划分为：80%训练+验证集（用于模型训练和交叉验证），20%测试集（最终评估）
-% 交叉验证在训练+验证集上运行，最终模型使用所有非测试数据训练，在测试集上评估
+% 测试集不参与特征筛选、模型训练或偏差校正，仅用于最终评估
 % 偏差校正采用简单线性回归，避免 lasso 可能的结构体问题
 % 新增：测试集散点图添加95%置信区间，增加CDF、Q-Q图、特征重要性、误差随样本变化图
 % 新增：在散点图上显示R²、RMSE、MAE指标
@@ -17,7 +17,7 @@ set(0, 'DefaultAxesFontSize', 12);
 set(0, 'DefaultTextFontSize', 12);
 
 %% 1. 加载基础模型和数据
-fprintf('==================== 无泄漏迁移学习系统（仅颜色特征） ====================\n');
+fprintf('==================== 迁移学习系统（仅颜色特征） ====================\n');
 try
     load('final_model_tuned.mat', 'final_model');
     fprintf('基础模型加载成功。\n');
@@ -88,24 +88,7 @@ ratio_rg_indoor = X_indoor(:,1) ./ (X_indoor(:,2) + eps);
 ratio_rb_indoor = X_indoor(:,1) ./ (X_indoor(:,3) + eps);
 X_indoor_eng = [X_indoor_eng, ratio_rg_indoor, ratio_rb_indoor];
 
-%% 4. 特征重要性筛选（使用全部数据，仅用于筛选，不用于评估）
-fprintf('\n===== 特征重要性筛选 =====\n');
-X_temp = [X_indoor_eng; X_eng];
-y_temp = [y_indoor; y_outdoor];
-rf_temp = TreeBagger(100, X_temp, y_temp, 'Method','regression',...
-    'OOBPredictorImportance','on');
-imp = rf_temp.OOBPermutedPredictorDeltaError;
-[~, idx_sorted] = sort(imp, 'descend');
-thresh = mean(imp);
-keep_idx = idx_sorted(imp(idx_sorted) > thresh);
-if isempty(keep_idx)
-    keep_idx = 1:size(X_temp,2);
-end
-fprintf('原始特征数: %d, 筛选后保留: %d\n', size(X_temp,2), length(keep_idx));
-X_indoor_eng = X_indoor_eng(:, keep_idx);
-X_eng = X_eng(:, keep_idx);
-
-%% 5. 划分独立测试集（20%室外数据）
+%% 4. 划分独立测试集（20%室外数据）
 rng(42);                             % 固定种子保证可重复
 test_ratio = 0.2;
 n_outdoor = size(X_outdoor,1);
@@ -114,9 +97,7 @@ rand_idx = randperm(n_outdoor);
 test_idx = rand_idx(1:test_size);
 train_val_idx = rand_idx(test_size+1:end);
 
-X_test = X_eng(test_idx, :);
 y_test = y_outdoor(test_idx);
-X_train_val = X_eng(train_val_idx, :);
 y_train_val = y_outdoor(train_val_idx);
 
 % 保存室外原始特征测试集（用于直接应用室内模型）
@@ -127,11 +108,33 @@ fprintf('室外数据总数: %d\n', n_outdoor);
 fprintf('训练+验证集: %d (%.1f%%)\n', length(train_val_idx), 100*(1-test_ratio));
 fprintf('独立测试集: %d (%.1f%%)\n', length(test_idx), 100*test_ratio);
 
+%% 5. 特征重要性筛选（仅使用室内数据和室外训练+验证集）
+fprintf('\n===== 特征重要性筛选 =====\n');
+X_indoor_eng_full = X_indoor_eng;
+X_train_val_full = X_eng(train_val_idx, :);
+X_test_full = X_eng(test_idx, :);
+X_temp = [X_indoor_eng_full; X_train_val_full];
+y_temp = [y_indoor; y_train_val];
+rng(42);                             % 固定特征筛选模型的随机过程
+rf_temp = TreeBagger(100, X_temp, y_temp, 'Method','regression',...
+    'OOBPredictorImportance','on');
+imp = rf_temp.OOBPermutedPredictorDeltaError;
+[~, idx_sorted] = sort(imp, 'descend');
+thresh = mean(imp);
+keep_idx = idx_sorted(imp(idx_sorted) > thresh);
+if isempty(keep_idx)
+    keep_idx = 1:size(X_temp,2);
+end
+fprintf('原始特征数: %d, 筛选后保留: %d\n', size(X_temp,2), length(keep_idx));
+X_indoor_eng = X_indoor_eng_full(:, keep_idx);
+X_train_val = X_train_val_full(:, keep_idx);
+X_test = X_test_full(:, keep_idx);
+
 %% 6. 在训练+验证集上执行5折交叉验证（评估模型稳定性）
 rng(42);                             % 再次重置种子，确保交叉验证划分可重复
 kfold = 5;
 cv = cvpartition(length(y_train_val), 'KFold', kfold);
-fprintf('\n===== %d折交叉验证（无测试集泄漏） =====\n', kfold);
+fprintf('\n===== %d折交叉验证（室外训练+验证子集） =====\n', kfold);
 
 fold_r2 = zeros(kfold,1);
 fold_r2_corr = zeros(kfold,1);
@@ -139,17 +142,35 @@ for fold = 1:kfold
     train_idx_fold = cv.training(fold);
     val_idx_fold = cv.test(fold);
     
-    X_train_fold = X_train_val(train_idx_fold, :);
+    X_train_fold_full = X_train_val_full(train_idx_fold, :);
     y_train_fold = y_train_val(train_idx_fold);
-    X_val_fold = X_train_val(val_idx_fold, :);
+    X_val_fold_full = X_train_val_full(val_idx_fold, :);
     y_val_fold = y_train_val(val_idx_fold);
     
+    % 每一折仅使用该折训练数据进行特征筛选
+    X_select_fold = [X_indoor_eng_full; X_train_fold_full];
+    y_select_fold = [y_indoor; y_train_fold];
+    rng(42 + fold);
+    rf_select_fold = TreeBagger(100, X_select_fold, y_select_fold, ...
+        'Method','regression','OOBPredictorImportance','on');
+    imp_fold = rf_select_fold.OOBPermutedPredictorDeltaError;
+    [~, idx_sorted_fold] = sort(imp_fold, 'descend');
+    keep_idx_fold = idx_sorted_fold(imp_fold(idx_sorted_fold) > mean(imp_fold));
+    if isempty(keep_idx_fold)
+        keep_idx_fold = 1:size(X_select_fold,2);
+    end
+
+    X_indoor_fold = X_indoor_eng_full(:, keep_idx_fold);
+    X_train_fold = X_train_fold_full(:, keep_idx_fold);
+    X_val_fold = X_val_fold_full(:, keep_idx_fold);
+
     % 合并室内数据
-    X_comb_fold = [X_indoor_eng; X_train_fold];
+    X_comb_fold = [X_indoor_fold; X_train_fold];
     y_comb_fold = [y_indoor; y_train_fold];
-    w_comb_fold = [0.2*ones(size(X_indoor_eng,1),1); 0.8*ones(size(X_train_fold,1),1)];
+    w_comb_fold = [0.2*ones(size(X_indoor_fold,1),1); 0.8*ones(size(X_train_fold,1),1)];
     
     % 训练模型（不计算重要性以提速）
+    rng(100 + fold);
     rf_fold = TreeBagger(200, X_comb_fold, y_comb_fold, ...
         'Method','regression','MinLeafSize',3,...
         'NumPredictorsToSample','all','Weights',w_comb_fold,...
@@ -195,7 +216,7 @@ if iscell(pred_train_final); pred_train_final = cellfun(@str2double, pred_train_
 resid_train_final = y_train_final - pred_train_final;
 mdl_corr_final = fitlm(pred_train_final, resid_train_final);
 
-%% 8. 在独立测试集上评估最终模型（无泄漏）及直接应用室内模型
+%% 8. 在独立测试集上评估最终模型及直接应用室内模型
 fprintf('\n===== 独立测试集评估 =====\n');
 
 % --- 迁移学习模型预测（校正后） ---
@@ -335,7 +356,7 @@ drawnow;
 % 图6：交叉验证箱线图
 figure('Position', [350, 350, figWidth, figHeight]);
 boxplot([fold_r2, fold_r2_corr], 'Labels', {'原始模型','校正模型'});
-ylabel('R²'); title('5折交叉验证R²分布（无测试集数据）'); grid on;
+ylabel('R²'); title('5折交叉验证R²分布（训练+验证子集）'); grid on;
 print('-dpng', '-r300', 'CrossValidation_R2.png');
 drawnow;
 

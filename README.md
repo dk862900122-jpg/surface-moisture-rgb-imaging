@@ -21,10 +21,12 @@ by any script in this repository.
 | `matlab/quantify_surface_roughness.m` | Quantifies image-based pore descriptors and the pore evolution deterioration index. |
 | `DATA_FORMAT.md` | Describes the required input files, columns, and principal outputs. |
 
-The MATLAB source code is unchanged from the author-provided files. Script
-filenames were standardised for repository use; the main function filename
-`rgb_to_hsv_lab_converter.m` was retained because MATLAB requires the file and
-primary function names to match.
+Script filenames were standardised for repository use; the main function
+filename `rgb_to_hsv_lab_converter.m` was retained because MATLAB requires the
+file and primary function names to match. In `train_transfer_model.m`, the
+independent field test subset is created before feature screening. Test samples
+are excluded from feature selection, model fitting, and bias correction.
+Feature screening is also refitted within each cross-validation training fold.
 
 ## Requirements
 
