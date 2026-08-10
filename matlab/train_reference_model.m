@@ -17,23 +17,385 @@ catch ME
 end
 
 % æ£€æŸ¥æ•°æ®åˆ—
-disp('æ•°æ®åˆ—ä¿¡æ¯ï¼š'5ãİ=¶‰ËkºwµçrÂv&W7Br“°Ğ¦w&–Böã²†—2WVÃ°Ğ§FW‡BƒãRÂã“RÂ7&–çFb‚u,+"ÒRãFeÆå$Õ4RÒRãFeÆäÔRÒRãFeÆæâÒVBrÂââàĞ¢#%ö÷WFFö÷"Â&×6Uö÷WFFö÷"ÂÖUö÷WFFö÷"Âå÷6×ÆW2’ÂââàĞ¢uVæ—G2rÂvæ÷&ÖÆ—¦VBrÂtföçE6—¦RrÂÂtföçEvV–v‡BrÂv&öÆBrÂââàĞ¢t&6¶w&÷VæD6öÆ÷"rÂwv†—FRrÂtVFvT6öÆ÷"rÂv&Æ6²r“°Ğ§6fV2†v6bÂtf–wW&SşZêNZIniZ>x+Y»âçærr“°Ğ Ğ¢RRY»ã#¢jè¾[zâg2š(NkX¾XÀĞ¦f–wW&R‚u÷6—F–öârÂ³#ÂÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ§66GFW"‡•ö÷WFFö÷%÷&VBÂ&W6–GVÇ2ÂSÂvf–ÆÆVBrÂââàĞ¢tÖ&¶W$f6T6öÆ÷"rÂ³ã‚ÂãBÂãEÒÂtÖ&¶W$f6TÇ†rÂãr“°Ğ¦†öÆBöã°Ğ§–Æ–æRƒÂw"ÒrÂtÆ–æUv–GF‚rÂ"“°Ğ§–Æ–æR†ÖVâ‡&W6–GVÇ2’ÂvrÒÒrÂtÆ–æUv–GF‚rÂãR“°Ğ§†Æ&VÂ‚~š(NkX¾Y
-¾kN˜xòr“°Ğ§–Æ&VÂ‚~jè¾[zâyÉşZéîXÂÒš(NkX¾XÂ’r“°Ğ§F—FÆR‚~jè¾[zîXˆnié¢jè¾[zâg2š(NkX¾XÂr“°Ğ¦ÆVvVæB‚~jè¾[zârÂ~™»n{«òrÂ7&–çFb‚~YØ~XÃ¢Rã6brÂÖVâ‡&W6–GVÇ2’’ÂtÆö6F–öârÂv&W7Br“°Ğ¦w&–Böã°Ğ§FW‡BƒãRÂã“RÂ7&–çFb‚~jè¾[zî{¹şŠê¥ÆîYØ~XÂÒRã6eÆîj~Xxn[zâÒRã6eÆîXş[ªbÒRã6brÂââàĞ¢ÖVâ‡&W6–GVÇ2’Â7FB‡&W6–GVÇ2’Â6¶WvæW72‡&W6–GVÇ2’’ÂââàĞ¢uVæ—G2rÂvæ÷&ÖÆ—¦VBrÂtföçE6—¦RrÂÂt&6¶w&÷VæD6öÆ÷"rÂwv†—FRrÂtVFvT6öÆ÷"rÂv&Æ6²r“°Ğ§6fV2†v6bÂtf–wW&S%şjè¾[zçg>š(NkX¾XÂçærr“°Ğ Ğ¢RRY»ã3¢jè¾[zîy»NikY»â²jÚ>hh¹şY€Ğ¦f–wW&R‚u÷6—F–öârÂ³3ÂÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦†—7Föw&Ò‡&W6–GVÇ2Â#Âtf6T6öÆ÷"rÂ³ã‚ÂãBÂãEÒÂtVFvT6öÆ÷"rÂv&Æ6²rÂtf6TÇ†rÂãr“°Ğ¦†öÆBöã°Ğ§BÒf—FF—7B‡&W6–GVÇ2Âtæ÷&ÖÂr“°Ğ§…÷FbÒÆ–ç76R†Ö–â‡&W6–GVÇ2’ÂÖ‚‡&W6–GVÇ2’Â“°Ğ§•÷FbÒFb‡BÂ…÷Fb“°Ğ¦†—7Eö6÷VçG2Ò†—7F6÷VçG2‡&W6–GVÇ2Â#“°Ğ¦Ö…ö6÷VçBÒÖ‚††—7Eö6÷VçG2“°Ğ¦Ö…÷FbÒÖ‚‡•÷Fb“°Ğ§•÷Fe÷66ÆVBÒ•÷Fb¢Ö…ö6÷VçBòÖ…÷Fc°Ğ§Æ÷B‡…÷FbÂ•÷Fe÷66ÆVBÂv"ÒrÂtÆ–æUv–GF‚rÂ"“°Ğ§†Æ&VÂ‚~jè¾[zâr“°Ğ§–Æ&VÂ‚~š)i[r“°Ğ§F—FÆR‚~jè¾[zîXˆn[ˆ2y»NikY»â’r“°Ğ¦ÆVvVæB‚~jè¾[zîXˆn[ˆ2rÂ7&–çFb‚~jÚ>hh¹şY‚ŒëÃÒRã6bÂø3ÒRã6b’rÂBæ×RÂBç6–vÖ’ÂtÆö6F–öârÂv&W7Br“°Ğ¦w&–Böã°Ğ§6fV2†v6bÂtf–wW&S5şjè¾[zîy»NikY»âçærr“°Ğ Ğ¢RRY»ãC¢y›îXˆnjùNŠúş[zîXˆn[ˆ0Ğ¦f–wW&R‚u÷6—F–öârÂ³CÂÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦†—7Föw&Ò†W'&÷%÷W&6VçFvRÂ#Âtf6T6öÆ÷"rÂ³ãBÂã‚ÂãEÒÂtVFvT6öÆ÷"rÂv&Æ6²rÂtf6TÇ†rÂãr“°Ğ§†Æ&VÂ‚~{¹ŞZûy›îXˆnjùNŠúş[zâ‚R’r“°Ğ§–Æ&VÂ‚~š)i[r“°Ğ§F—FÆR‚~y›îXˆnjùNŠúş[zîXˆn[ˆ2r“°Ğ¦w&–Böã°Ğ§FW‡BƒãRÂã“RÂ7&–çFb‚~Šúş[zî{¹şŠê¥ÆîKŠŞKØŞi[ÒRãbRUÆã“R^XˆnKØŞi[ÒRãbRUÆîiÈZJ~Šúş[zâÒRãbRRrÂââàĞ¢ÖVF–â†W'&÷%÷W&6VçFvR’Â&7F–ÆR†W'&÷%÷W&6VçFvRÂ“’ÂÖ‚†W'&÷%÷W&6VçFvR’’ÂââàĞ¢uVæ—G2rÂvæ÷&ÖÆ—¦VBrÂtföçE6—¦RrÂÂtföçEvV–v‡BrÂv&öÆBrÂââàĞ¢t&6¶w&÷VæD6öÆ÷"rÂwv†—FRrÂtVFvT6öÆ÷"rÂv&Æ6²r“°Ğ§6fV2†v6bÂtf–wW&SEşy›îXˆnjùNŠúş[zîXˆn[ˆ2çærr“°Ğ Ğ¢RRY»ãS¢š(NkX¾XÎKˆîyÉşZéîXÎhé.[¨şZûjùNY»îûÈ…‹ÛNK™KºSûÈĞ¦f–wW&R‚u÷6—F–öârÂ³Â#Âf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¥·âÂ6÷'FVEö–G…ÒÒ6÷'B‡•ö÷WFFö÷%÷G'VR“°Ğ§•÷G'VU÷6÷'FVBÒ•ö÷WFFö÷%÷G'VR‡6÷'FVEö–G‚’¢°Ğ§•÷&VE÷6÷'FVBÒ•ö÷WFFö÷%÷&VB‡6÷'FVEö–G‚’¢°Ğ Ğ§Æ÷Bƒ¦å÷6×ÆW2Â•÷G'VU÷6÷'FVBÂw"ÒrÂtÆ–æUv–GF‚rÂ"ÂtF—7Æ”æÖRrÂ~yÉşZéîXÂr“°Ğ¦†öÆBöã°Ğ§Æ÷Bƒ¦å÷6×ÆW2Â•÷&VE÷6÷'FVBÂv"ÒÒrÂtÆ–æUv–GF‚rÂ"ÂtF—7Æ”æÖRrÂ~š(NkX¾XÂr“°Ğ§66GFW"ƒ¦å÷6×ÆW2Â•÷G'VU÷6÷'FVBÂ3Âw"rÂvf–ÆÆVBrÂtÖ&¶W$f6TÇ†rÂãRÂt†æFÆUf—6–&–Æ—G’rÂvöfbr“°Ğ§66GFW"ƒ¦å÷6×ÆW2Â•÷&VE÷6÷'FVBÂ3Âv"rÂvf–ÆÆVBrÂtÖ&¶W$f6TÇ†rÂãRÂt†æFÆUf—6–&–Æ—G’rÂvöfbr“°Ğ Ğ§†Æ&VÂ‚~j~iÊÎ[¨şXûrhÈyÉşZéîXÎhé.[¨ò’r“°Ğ§–Æ&VÂ‚~Y
-¾kN˜xò‚R’r“°Ğ§F—FÆR‚~š(NkX¾XÎKˆîyÉşZéîXÎZûjùBhé.[¨şYâ’r“°Ğ¦ÆVvVæB‚tÆö6F–öârÂv&W7Br“°Ğ¦w&–Böã°Ğ§6fV2†v6bÂtf–wW&SUşhé.[¨şZûjùNY»âçærr“°Ğ Ğ¢RRY»ãc¢Šúş[zîKˆîx›[èy»X[>h
-pĞ¦f–wW&R‚u÷6—F–öârÂ³#Â#Âf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦fVGW&UöæÖW5öF—7Ò²u%÷¶æ÷&×ÒrÂtu÷¶æ÷&×ÒrÂt%÷¶æ÷&×ÒwÓ°Ğ¦6÷'%÷v—F…öW'&÷"Ò¦W&÷2ƒÂ2“°Ğ¦f÷"’Ò£0Ğ¢6÷'%÷v—F…öW'&÷"†’’Ò6÷'"……ö÷WFFö÷"ƒ¢Â’’Â'5öW'&÷'2“°Ğ¦Væ@Ğ¦&"†6÷'%÷v—F…öW'&÷"Âtf6T6öÆ÷"rÂ³ãbÂã"Âã…Ò“°Ğ§6WB†v6Âu…F–6´Æ&VÂrÂfVGW&UöæÖW5öF—7“°Ğ§–Æ&VÂ‚~Kˆî{¹ŞZûŠúş[zîy¨Ny»X[>{;¾i[r“°Ğ§F—FÆR‚~Šúş[zîKˆîx›[èy»X[>h
-rr“°Ğ¦w&–Böã°Ğ¦f÷"’Ò¦ÆVæwF‚†6÷'%÷v—F…öW'&÷"Ğ¢FW‡B†’Â6÷'%÷v—F…öW'&÷"†’’²ã"¢6–vâ†6÷'%÷v—F…öW'&÷"†’’’ÂââàĞ¢7&–çFb‚rRã6brÂ6÷'%÷v—F…öW'&÷"†’’’ÂââàĞ¢t†÷&—¦öçFÄÆ–væÖVçBrÂv6VçFW"rÂtföçE6—¦RrÂÂtföçEvV–v‡BrÂv&öÆBr“°Ğ¦Væ@Ğ§6fV2†v6bÂtf–wW&SeşŠúş[zîx›[èy»X[>h
-rçærr“°Ğ Ğ¢RRY»ãs¢x›[èz›®™{NXˆn[ˆ>KˆîŠúş[zîX[>{;¾ûÈƒ>KŠ®{¸NYûÈÎXˆnXŠ¾{¹X‹nûÈĞ¦fVGW&Uö6öÖ&–æF–öç2Ò³Â#²Â3²"Â5Ó°Ğ§F—FÆW2Ò²u%÷¶æ÷&×Òg2u÷¶æ÷&×ÒrÂu%÷¶æ÷&×Òg2%÷¶æ÷&×ÒrÂtu÷¶æ÷&×Òg2%÷¶æ÷&×ÒwÓ°Ğ¦f÷"’Ò£0Ğ¢f–wW&R‚u÷6—F–öârÂ³¦’Â3Âf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¢fVCÒfVGW&Uö6öÖ&–æF–öç2†’Â“°Ğ¢fVC"ÒfVGW&Uö6öÖ&–æF–öç2†’Â"“°Ğ¢66GFW"……ö÷WFFö÷"ƒ¢ÂfVC’Â…ö÷WFFö÷"ƒ¢ÂfVC"’ÂSÂââàĞ¢'5öW'&÷'2Âvf–ÆÆVBrÂtÖ&¶W$VFvT6öÆ÷"rÂv²rÂtÆ–æUv–GF‚rÂãR“°Ğ¢†Æ&VÂ†fVGW&UöæÖW5öF—7¶fVCÒ“°Ğ¢–Æ&VÂ†fVGW&UöæÖW5öF—7¶fVC'Ò“°Ğ¢F—FÆR‡F—FÆW7¶—Ò“°Ğ¢6öÆ÷&&#°Ğ¢6öÆ÷&Ö†¦WB“°Ğ¢6†—2…³Â&7F–ÆR†'5öW'&÷'2Â“R•Ò“°Ğ¢w&–Böã°Ğ¢%öfVBÒ6÷'"……ö÷WFFö÷"ƒ¢ÂfVC’Â…ö÷WFFö÷"ƒ¢ÂfVC"’“°Ğ¢FW‡BƒãRÂã“RÂ7&–çFb‚w"ÒRã6brÂ%öfVB’ÂââàĞ¢uVæ—G2rÂvæ÷&ÖÆ—¦VBrÂtföçE6—¦RrÂÂtföçEvV–v‡BrÂv&öÆBrÂââàĞ¢t&6¶w&÷VæD6öÆ÷"rÂwv†—FRrÂtVFvT6öÆ÷"rÂv&Æ6²r“°Ğ¢6fV2†v6bÂ7&–çFb‚tf–wW&Suşx›[è{¸NY‚VBçærrÂ’’“°Ğ¦Væ@Ğ Ğ¢RRY»ãƒ¢Šúş[zîKˆîYNKŠ®x›[èy¨NX[>{;¾ûÈƒ>KŠ®ZÙY»îXˆnXŠ¾{¹X‹nûÈĞ¦f÷"’Ò£0Ğ¢f–wW&R‚u÷6—F–öârÂ³¦’ÂCÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¢66GFW"……ö÷WFFö÷"ƒ¢Â’’Â'5öW'&÷'2ÂCÂvf–ÆÆVBrÂââàĞ¢tÖ&¶W$f6T6öÆ÷"rÂ³ã"ÂãbÂã…ÒÂtÖ&¶W$f6TÇ†rÂãb“°Ğ¢†öÆBöã°Ğ¢·…÷6÷'FVBÂ6÷'Eö–G…ÒÒ6÷'B……ö÷WFFö÷"ƒ¢Â’’“°Ğ¢•÷6÷'FVBÒ'5öW'&÷'2‡6÷'Eö–G‚“°Ğ¢G'Ğ¢6Öö÷F…÷fÇ2Ò6Öö÷F‚‡…÷6÷'FVBÂ•÷6÷'FVBÂã2ÂvÆöW72r“°Ğ¢Æ÷B‡…÷6÷'FVBÂ6Öö÷F…÷fÇ2Âw"ÒrÂtÆ–æUv–GF‚rÂ"“°Ğ¢ÆVvVæB‚~i[hÚîx+’rÂ~‹h¾X«ş{«òrÂtÆö6F–öârÂv&W7Br“°Ğ¢6F6€Ğ¢v–æF÷u÷6—¦RÒÖ‚ƒRÂfÆö÷"†ÆVæwF‚‡…÷6÷'FVB’ó#’“°Ğ¢Ö÷eöfrÒÖ÷fÖVâ‡•÷6÷'FVBÂv–æF÷u÷6—¦R“°Ğ¢Æ÷B‡…÷6÷'FVBÂÖ÷eöfrÂw"ÒrÂtÆ–æUv–GF‚rÂ"“°Ğ¢ÆVvVæB‚~i[hÚîx+’rÂ~z{¾Xª[›>YØrrÂtÆö6F–öârÂv&W7Br“°Ğ¢Væ@Ğ¢†Æ&VÂ†fVGW&UöæÖW5öF—7¶—Ò“°Ğ¢–Æ&VÂ‚~{¹ŞZûŠúş[zâr“°Ğ¢F—FÆR‡7&–çFb‚~Šúş[zâg2W2rÂfVGW&UöæÖW5öF—7¶—Ò’“°Ğ¢w&–Böã°Ğ¢%öW'&÷"Ò6÷'"……ö÷WFFö÷"ƒ¢Â’’Â'5öW'&÷'2“°Ğ¢FW‡BƒãRÂã“RÂ7&–çFb‚w"ÒRã6brÂ%öW'&÷"’ÂââàĞ¢uVæ—G2rÂvæ÷&ÖÆ—¦VBrÂtföçE6—¦RrÂÂtföçEvV–v‡BrÂv&öÆBrÂââàĞ¢t&6¶w&÷VæD6öÆ÷"rÂwv†—FRrÂtVFvT6öÆ÷"rÂv&Æ6²r“°Ğ¢6fV2†v6bÂ7&–çFb‚tf–wW&S…şŠúş[zîKˆîx›[èVBçærrÂ’’“°Ğ¦Væ@Ğ Ğ¢RRY»ã“¢h
-~ˆ;Şh¾{¹>ûÈXøÎiûx«nY»îûÈÎXˆnK‹®KŠNKŠ®ZÙY»îXÙ^xºÎ{¹X‹nûÈĞ¢RZÙY»ã¢XéşZx¾hÈ~jpĞ¦f–wW&R‚u÷6—F–öârÂ³ÂSÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦ÖWG&–75öæÖW2Ò²u,+"rÂu$Õ4RrÂtÔRrÂtÔR‚R’rÂt&–2rÂ~y»X[>{;¾i[wÓ°Ğ¦ÖWG&–75÷fÇVW2Ò·#%ö÷WFFö÷"Â&×6Uö÷WFFö÷"ÂÖUö÷WFFö÷"ÂââàĞ¢ÖUö÷WFFö÷"Â&–5ö÷WFFö÷"Â6÷'%ö6öVeÓ°Ğ¦&"†ÖWG&–75÷fÇVW2Âtf6T6öÆ÷"rÂ³ã"ÂãbÂã…Ò“°Ğ§6WB†v6Âu…F–6´Æ&VÂrÂÖWG&–75öæÖW2Âu…F–6´Æ&VÅ&÷FF–öârÂCR“°Ğ§–Æ&VÂ‚~hÈ~j~XÂr“°Ğ§F—FÆR‚~ZêNZIni[hÚîš¨ÎŠøh
-~ˆ;ŞhÈ~jrr“°Ğ¦w&–Böã°Ğ¦f÷"’Ò¦ÆVæwF‚†ÖWG&–75÷fÇVW2Ğ¢–b’ÓÒBbbæ—6æâ†ÖUö÷WFFö÷"Ğ¢FW‡B†’ÂÖWG&–75÷fÇVW2†’’²ãR¦Ö‚†ÖWG&–75÷fÇVW2’ÂââàĞ¢7&–çFb‚rRã&brÂÖWG&–75÷fÇVW2†’’’ÂââàĞ¢t†÷&—¦öçFÄÆ–væÖVçBrÂv6VçFW"rÂtföçE6—¦RrÂ’ÂtföçEvV–v‡BrÂv&öÆBr“°Ğ¢VÇ6PĞ¢FW‡B†’ÂÖWG&–75÷fÇVW2†’’²ãR¦Ö‚†ÖWG&–75÷fÇVW2’ÂââàĞ¢7&–çFb‚rRãFbrÂÖWG&–75÷fÇVW2†’’’ÂââàĞ¢t†÷&—¦öçFÄÆ–væÖVçBrÂv6VçFW"rÂtföçE6—¦RrÂ’ÂtföçEvV–v‡BrÂv&öÆBr“°Ğ¢Væ@Ğ¦Væ@Ğ§6fV2†v6bÂtf–wW&S•şh
-~ˆ;ŞhÈ~j~XéşZx²çærr“°Ğ Ğ¢RZÙY»ã#¢j~XxnXÉnhÈ~jpĞ¦f–wW&R‚u÷6—F–öârÂ³#ÂSÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72Ò¦W&÷2‡6—¦R†ÖWG&–75÷fÇVW2’“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒ’Ò#%ö÷WFFö÷#°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒ"’Òòƒ²&×6Uö÷WFFö÷"“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒ2’Òòƒ²ÖUö÷WFFö÷"“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒB’Òòƒ²ÖUö÷WFFö÷"ó“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒR’Òòƒ²'2†&–5ö÷WFFö÷"’“°Ğ¦æ÷&ÖÆ—¦VEöÖWG&–72ƒb’Ò6÷'%ö6öVc°Ğ¦&"†æ÷&ÖÆ—¦VEöÖWG&–72Âtf6T6öÆ÷"rÂ³ã‚ÂãBÂãEÒ“°Ğ§6WB†v6Âu…F–6´Æ&VÂrÂÖWG&–75öæÖW2Âu…F–6´Æ&VÅ&÷FF–öârÂCR“°Ğ§–Æ&VÂ‚~j~XxnXÉnhÈ~jrƒÓÂ‹h®ZJ~‹h®Z[Ò’r“°Ğ§F—FÆR‚~j~XxnXÉnh
-~ˆ;ŞhÈ~jrr“°Ğ§–Æ–Ò…³ÂãÒ“°Ğ¦w&–Böã°Ğ¦f÷"’Ò¦ÆVæwF‚†æ÷&ÖÆ—¦VEöÖWG&–72Ğ¢FW‡B†’Âæ÷&ÖÆ—¦VEöÖWG&–72†’’²ãRÂââàĞ¢7&–çFb‚rRã6brÂæ÷&ÖÆ—¦VEöÖWG&–72†’’’ÂââàĞ¢t†÷&—¦öçFÄÆ–væÖVçBrÂv6VçFW"rÂtföçE6—¦RrÂ’ÂtföçEvV–v‡BrÂv&öÆBr“°Ğ¦Væ@Ğ§6fV2†v6bÂtf–wW&Sşh
-~ˆ;ŞhÈ~j~j~XxnXÉbçærr“°Ğ Ğ¢RRY»ã¢jè¾[zâÕY»àĞ¦f–wW&R‚u÷6—F–öârÂ³3ÂSÂf–uv–GF‚Âf–t†V–v‡EÒ“°Ğ¦‚ÒÆ÷B‡&W6–GVÇ2“°Ğ§6WB†‚ƒ’ÂtÖ&¶W"rÂvòrÂtÖ&¶W$VFvT6öÆ÷"rÂvæöæRrÂââàĞ¢tÖ&¶W$f6T6öÆ÷"rÂ³ã"ÂãbÂã…ÒÂtÖ&¶W%6—¦RrÂR“°Ğ§6WB†‚ƒ"’ÂtÆ–æU7G–ÆRrÂrÒÒrÂt6öÆ÷"rÂw"rÂtÆ–æUv–GF‚rÂãR“°Ğ¦ÆVvVæB…¶‚ƒ’Â‚ƒ"•ÒÂ²~i[hÚîx+’rÂ~ynŠë®{«òwÒÂtÆö6F–öârÂw6÷WF†V7Br“°Ğ§F—FÆR‚~ZêNZInš¨ÎŠøjè¾[zâÕY»âr“°Ğ§†Æ&VÂ‚~j~XxnjÚ>hXˆnKØŞi[r“°Ğ§–Æ&VÂ‚~jè¾[zîXˆnKØŞi[r“°Ğ¦w&–Böã°Ğ§6fV2†v6bÂtf–wW&Sşjè¾[zåY»âçærr“°Ğ Ğ¢RRrâKùŞZÙš¨ÎŠø{¹>iéÎûÈKˆîXéşzˆ¾[¨şy»YÎûÈÎyZ^ûÈĞ¦g&–çFb‚uÆîjÚ>YÊKùŞZÙš¨ÎŠø{¹>iéÂââåÆâr“°Ğ§fÆ–FF–öå÷&W7VÇG2ÒF&ÆR‡•ö÷WFFö÷%÷G'VRÂ•ö÷WFFö÷%÷&VBÂ&W6–GVÇ2ÂââàĞ¢'5öW'&÷'2ÂW'&÷%÷W&6VçFvRÂââàĞ¢…ö÷WFFö÷"ƒ¢Ã’Â…ö÷WFFö÷"ƒ¢Ã"’Â…ö÷WFFö÷"ƒ¢Ã2’ÂââàĞ¢uf&–&ÆTæÖW2rÂ²uG'VUõvFW$6öçFVçBrÂââàĞ¢u&VF–7FVEõvFW$6öçFVçBrÂââàĞ¢u&W6–GVÂrÂââàĞ¢t'6öÇWFUôW'&÷"rÂââàĞ¢uW&6VçFvUôW'&÷"rÂââàĞ¢u%öæ÷&ÒrÂtuöæ÷&ÒrÂt%öæ÷&ÒwÒ“°Ğ§w&—FWF&ÆR‡fÆ–FF–öå÷&W7VÇG2Âv÷WFFö÷%÷fÆ–FF–öå÷&W7VÇG2æ77br“°Ğ Ğ§W&f÷&Öæ6UöÖWG&–72ÒF&ÆR†ÖWG&–75öæÖW2rÂÖWG&–75÷fÇVW2rÂæ÷&ÖÆ—¦VEöÖWG&–72rÂââàĞ¢uf&–&ÆTæÖW2rÂ²tÖWG&–2rÂufÇVRrÂtæ÷&ÖÆ—¦VEõfÇVRwÒ“°Ğ§w&—FWF&ÆR‡W&f÷&Öæ6UöÖWG&–72Âv÷WFFö÷%÷W&f÷&Öæ6UöÖWG&–72æ77br“°Ğ Ğ§&W÷'Eöf–ÆVæÖRÒv÷WFFö÷%÷fÆ–FF–öå÷&W÷'BçG‡Bs°Ğ¦f–BÒf÷Vâ‡&W÷'Eöf–ÆVæÖRÂwrr“°Ğ¦g&–çFb†f–BÂ~ZêNZIni[hÚîjŠYè¾š¨ÎŠøhª^Y®ûÈK¸^š)Îˆ›.x›[èûÈ•Æâr“°Ğ¦g&–çFb†f–BÂsÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÕÆâr“°Ğ¦g&–çFb†f–BÂ~yIşh‰i{n™{C¢W5ÆârÂFFW7G"†æ÷r’“°Ğ¦g&–çFb†f–BÂ~jŠYè¾ih~K»c¢f–æÅöÖöFVÅ÷GVæVBæÖEÆâr“°Ğ¦g&–çFb†f–BÂ~š¨ÎŠøi[hÚã¢W5ÆârÂ÷WFFö÷%öf–ÆVæÖR“°Ğ¦g&–çFb†f–BÂ~j~iÊÎi[˜xó¢VEÆârÂå÷6×ÆW2“°Ğ¦g&–çFb†f–BÂuÆîKˆ8i[hÚîYû®iÊÎKúhõÆâr“°Ğ¦g&–çFb†f–BÂ~x›[èˆÈ>Y»C¥Æâr“°Ğ¦g&–çFb†f–BÂr%öæ÷&Ó¢RãFbâRãFbYØ~XÃÒRãFb•ÆârÂââàĞ¢Ö–â……ö÷WFFö÷"ƒ¢Ã’’ÂÖ‚……ö÷WFFö÷"ƒ¢Ã’’ÂÖVâ……ö÷WFFö÷"ƒ¢Ã’’“°Ğ¦g&–çFb†f–BÂruöæ÷&Ó¢RãFbâRãFbYØ~XÃÒRãFb•ÆârÂââàĞ¢Ö–â……ö÷WFFö÷"ƒ¢Ã"’’ÂÖ‚……ö÷WFFö÷"ƒ¢Ã"’’ÂÖVâ……ö÷WFFö÷"ƒ¢Ã"’’“°Ğ¦g&–çFb†f–BÂr%öæ÷&Ó¢RãFbâRãFbYØ~XÃÒRãFb•ÆârÂââàĞ¢Ö–â……ö÷WFFö÷"ƒ¢Ã2’’ÂÖ‚……ö÷WFFö÷"ƒ¢Ã2’’ÂÖVâ……ö÷WFFö÷"ƒ¢Ã2’’“°Ğ¦g&–çFb†f–BÂ~Y
-¾kN˜xşˆÈ>Y»C¢RãFbâRãFbYØ~XÃÒRãFb•ÆârÂââàĞ¢Ö–â‡•ö÷WFFö÷%÷G'VR’ÂÖ‚‡•ö÷WFFö÷%÷G'VR’ÂÖVâ‡•ö÷WFFö÷%÷G'VR’“°Ğ Ğ¦g&–çFb†f–BÂuÆîK¨Î8jŠYè¾h
-~ˆ;ŞhÈ~juÆâr“°Ğ¦f÷"’Ò¦ÆVæwF‚†ÖWG&–75öæÖW2Ğ¢–b’ÓÒBbbæ—6æâ†ÖUö÷WFFö÷"Ğ¢g&–çFb†f–BÂrW3¢Rã&eÆârÂÖWG&–75öæÖW7¶—ÒÂÖWG&–75÷fÇVW2†’’“°Ğ¢VÇ6PĞ¢g&–çFb†f–BÂrW3¢RãFeÆârÂÖWG&–75öæÖW7¶—ÒÂÖWG&–75÷fÇVW2†’’“°Ğ¢Væ@Ğ¦Væ@Ğ Ğ¦g&–çFb†f–BÂuÆîKˆ8jŠYè¾˜.yJh
-~ŠøNKËÆâr“°Ğ¦–b#%ö÷WFFö÷"âãpĞ¢g&–çFb†f–BÂrjŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëKÉzx…,+"âãr•Æâr“°Ğ¦VÇ6V–b#%ö÷WFFö÷"âãPĞ¢g&–çFb†f–BÂrjŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëˆšşZ[Ò…,+"âãR•Æâr“°Ğ¦VÇ6V–b#%ö÷WFFö÷"âã0Ğ¢g&–çFb†f–BÂrjŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëKˆˆŠÂ…,+"âã2•Æâr“°Ğ¦VÇ6PĞ¢g&–çFb†f–BÂrjŠYè¾YÊZêNZIni[hÚîKˆ®Šxë‹è>[zâ…,+"(šBã2•Æâr“°Ğ¦Væ@Ğ Ğ¦g&–çFb†f–BÂuÆîY¹¾8Šúş[zîXˆniéÆâr“°Ğ¦g&–çFb†f–BÂrjè¾[zî{¹şŠê¥Æâr“°Ğ¦g&–çFb†f–BÂrYØ~XÃ¢RãFeÆârÂÖVâ‡&W6–GVÇ2’“°Ğ¦g&–çFb†f–BÂrj~Xxn[zã¢RãFeÆârÂ7FB‡&W6–GVÇ2’“°Ğ¦g&–çFb†f–BÂrXş[ªc¢RãFeÆârÂ6¶WvæW72‡&W6–GVÇ2’“°Ğ¦g&–çFb†f–BÂr[;[ªc¢RãFeÆârÂ·W'F÷6—2‡&W6–GVÇ2’“°Ğ¦g&–çFb†f–BÂuÆâ{¹ŞZûy›îXˆnjùNŠúş[zî{¹şŠê¥Æâr“°Ğ¦–bæ—6æâ†ÖUö÷WFFö÷"Ğ¢g&–çFb†f–BÂr[›>YØ~XÃ¢Rã&bRUÆârÂÖVâ†W'&÷%÷W&6VçFvR’“°Ğ¢g&–çFb†f–BÂrKŠŞKØŞi[¢Rã&bRUÆârÂÖVF–â†W'&÷%÷W&6VçFvR’“°Ğ¢g&–çFb†f–BÂr“R^XˆnKØŞi[¢Rã&bRUÆârÂ&7F–ÆR†W'&÷%÷W&6VçFvRÂ“’“°Ğ¢g&–çFb†f–BÂriÈZJ~Šúş[zã¢Rã&bRUÆârÂÖ‚†W'&÷%÷W&6VçFvR’“°Ğ¦Væ@Ğ Ğ¦g&–çFb†f–BÂuÆîK©N8ih~K»n‹é>X{¥Æâr“°Ğ¦g&–çFb†f–BÂrâš¨ÎŠø{¹>iéÃ¢÷WFFö÷%÷fÆ–FF–öå÷&W7VÇG2æ77eÆâr“°Ğ¦g&–çFb†f–BÂr"âh
-~ˆ;ŞhÈ~js¢÷WFFö÷%÷W&f÷&Öæ6UöÖWG&–72æ77eÆâr“°Ğ¦g&–çFb†f–BÂr2âXúşŠxnXÉnY»î[Ú#¢[{.KùŞZÙK‹¥ä~ih~K»eÆâr“°Ğ¦f6Æ÷6R†f–B“°Ğ Ğ¦g&–çFb‚uÆîš¨ÎŠø{¹>iéÎ[{.KùŞZÙûÈÆâr“°Ğ¦g&–çFb‚sâš¨ÎŠø{¹>iéÃ¢÷WFFö÷%÷fÆ–FF–öå÷&W7VÇG2æ77eÆâr“°Ğ¦g&–çFb‚s"âh
-~ˆ;ŞhÈ~js¢÷WFFö÷%÷W&f÷&Öæ6UöÖWG&–72æ77eÆâr“°Ğ¦g&–çFb‚s2âš¨ÎŠøhª^Y£¢÷WFFö÷%÷fÆ–FF–öå÷&W÷'BçG‡EÆâr“°Ğ¦g&–çFb‚sBâY»î[Ú.ih~K»c¢f–wW&SãçæuÆâr“°Ğ Ğ¢RR‚âiÈ{¸[»®ŠêîûÈKˆîXéşzˆ¾[¨şy»YÎûÈĞ¦g&–çFb‚uÆãÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÕÆâr“°Ğ¦g&–çFb‚~jŠYè¾˜.yJh
-~[»®Šêã¥Æâr“°Ğ¦g&–çFb‚sÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÕÆâr“°Ğ¦–b#%ö÷WFFö÷"âãpĞ¢g&–çFb‚~)É2jŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëKÉzxûÈÎXúşKº^y»Nhê^[©NyJ8%Æâr“°Ğ¦VÇ6V–b#%ö÷WFFö÷"âãPĞ¢g&–çFb‚~)É2jŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëˆšşZ[ŞûÈÎXúşKº^ˆ>‰™y»Nhê^[©NyJh‰n[êî‹>8%Æâr“°Ğ¢g&–çFb‚r[»®Šêîj8iú^x›[èXˆn[ˆ>iŠşY
-nKˆîŠêŞ{¸>i[hÚîKˆˆ{N8%Æâr“°Ğ¦VÇ6V–b#%ö÷WFFö÷"âã0Ğ¢g&–çFb‚~)ªjŠYè¾YÊZêNZIni[hÚîKˆ®ŠxëKˆˆŠÎûÈÎ[»®Šêî‹ù¾ŠÎjŠYè¾[êî‹>h‰n˜xŞikŠêŞ{¸>8%Æâr“°Ğ¢g&–çFb‚rXúşˆ;ŞXéşYºûÉ®ZêNXh^ZIni[hÚîXˆn[ˆ>[zî[È.‹è>ZJ~8%Æâr“°Ğ¦VÇ6PĞ¢g&–çFb‚~)ÉrjŠYè¾YÊZêNZIni[hÚîKˆ®Šxë‹è>[zîûÈÎKˆŞ[»®Šêîy»Nhê^[©NyJ8%Æâr“°Ğ¢g&–çFb‚r[»®ŠêîûÉ¥Æâr“°Ğ¢g&–çFb‚râj8iú^ZêNXh^ZIni[hÚîy¨NKˆˆ{Nh
-uÆâr“°Ğ¢g&–çFb‚r"âˆ>‰™˜xŞikŠêŞ{¸>jŠYè¾h‰nKÛşyJ‹øz{¾ZÚnKšÆâr“°Ğ¢g&–çFb‚r2âXúşˆ;Ş™ÈŠhi»NZI®ZêNZIni[hÚî‹ù¾ŠÎjŠYè¾‹>i[EÆâr“°Ğ¦Væ@Ğ¦g&–çFb‚uÆîK‹¾ŠhXùxë¥Æâr“°Ğ¦–b'2†&–5ö÷WFFö÷"’âã¢7FB‡•ö÷WFFö÷%÷G'VRĞ¢g&–çFb‚rÒjŠYè¾ZÙYÊi‹î‰~Xş[zâ„&–2ÒRãFb•ÆârÂ&–5ö÷WFFö÷"“°Ğ¦Væ@Ğ¦–bÖ‚†W'&÷%÷W&6VçFvR’âS Ğ¢g&–çFb‚rÒ˜:Xˆnj~iÊÎš(NkX¾Šúş[zî‹è>ZJriÈZJ~Šúş[zâRãbRR•ÆârÂÖ‚†W'&÷%÷W&6VçFvR’“°Ğ¦Væ@Ğ¦†–v…ö6÷'%öfVGW&W2Òf–æB†'2†6÷'%÷v—F…öW'&÷"’âã2“°Ğ¦–bæ—6V×G’††–v…ö6÷'%öfVGW&W2Ğ¢g&–çFb‚rÒKº^Kˆ¾x›[èKˆîš(NkX¾Šúş[zîy»X[>h
-~‹è>š¹ƒ¥Æâr“°Ğ¢f÷"’Ò¦ÆVæwF‚††–v…ö6÷'%öfVGW&W2Ğ¢g&–çFb‚r¢W3¢"ÒRã6eÆârÂââàĞ¢fVGW&UöæÖW5öF—7¶†–v…ö6÷'%öfVGW&W2†’—ÒÂââàĞ¢6÷'%÷v—F…öW'&÷"††–v…ö6÷'%öfVGW&W2†’’’“°Ğ¢Væ@Ğ¢g&–çFb‚r‹ùXúşˆ;ŞhHşY>yØYÊ‹ùK©¾x›[èˆÈ>Y»NXh^jŠYè¾k9¾XÉnˆ;ŞX©¾KˆŞ‹k>8%Æâr“°Ğ¦Væ@Ğ¦g&–çFb‚uÆãÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÕÆâr“°Ğ¦g&–çFb‚~š¨ÎŠøZèÎh‰ûÈÆâr“°
+disp('æ•°æ®åˆ—ä¿¡æ¯ï¼š');
+disp(data.Properties.VariableNames);
+
+% ç¡®ä¿å¿…éœ€åˆ—å­˜åœ¨
+required_columns = {'R_norm', 'G_norm', 'B_norm', 'watercontent'};
+for i = 1:length(required_columns)
+    if ~ismember(required_columns{i}, data.Properties.VariableNames)
+        error('æ•°æ®è¡¨ä¸­ç¼ºå°‘å¿…éœ€çš„åˆ—: %s', required_columns{i});
+    end
+end
+
+% æå–ç‰¹å¾å’Œç›®æ ‡å˜é‡
+X = [data.R_norm, data.G_norm, data.B_norm];
+y = data.watercontent;
+if size(y, 1) == 1
+    y = y';
+end
+
+% æ˜¾ç¤ºæ•°æ®ç»Ÿè®¡ä¿¡æ¯
+disp('æ•°æ®ç»Ÿè®¡ä¿¡æ¯:');
+disp(table({'R_norm'; 'G_norm'; 'B_norm'; 'watercontent'}, ...
+    [mean(X(:,1)); mean(X(:,2)); mean(X(:,3)); mean(y)], ...
+    [std(X(:,1)); std(X(:,2)); std(X(:,3)); std(y)], ...
+    [min(X(:,1)); min(X(:,2)); min(X(:,3)); min(y)], ...
+    [max(X(:,1)); max(X(:,2)); max(X(:,3)); max(y)], ...
+    'VariableNames', {'Variable', 'Mean', 'Std', 'Min', 'Max'}));
+
+%% ==================== 2. åˆ’åˆ†è®­ç»ƒé›†å’ŒéªŒè¯é›† ====================
+rng(42);
+cv_part = cvpartition(length(y), 'HoldOut', 0.3);
+train_idx = training(cv_part);
+test_idx  = test(cv_part);
+
+X_train = X(train_idx, :);
+y_train = y(train_idx);
+X_test  = X(test_idx, :);
+y_test  = y(test_idx);
+
+fprintf('\n==================== æ•°æ®åˆ’åˆ† ====================\n');
+fprintf('è®­ç»ƒé›†æ ·æœ¬æ•°: %d\n', length(y_train));
+fprintf('éªŒè¯é›†æ ·æœ¬æ•°: %d\n', length(y_test));
+fprintf('================================================\n');
+
+%% ==================== 3. äº”æŠ˜äº¤å‰éªŒè¯ï¼ˆé»˜è®¤å‚æ•°ï¼‰ ====================
+rng(42);
+k = 5;
+cv = cvpartition(length(y_train), 'KFold', k);
+
+r2_scores_cv = zeros(k, 1);
+rmse_scores_cv = zeros(k, 1);
+mae_scores_cv = zeros(k, 1);
+all_y_test_cv = [];
+all_y_pred_cv = [];
+
+fprintf('\nå¼€å§‹äº”æŠ˜äº¤å‰éªŒè¯ï¼ˆåŸºäºè®­ç»ƒé›†ï¼Œé»˜è®¤å‚æ•°ï¼‰...\n');
+for fold = 1:k
+    fprintf('æ­£åœ¨è®­ç»ƒç¬¬ %d æŠ˜...\n', fold);
+    
+    train_fold_idx = training(cv, fold);
+    val_fold_idx   = test(cv, fold);
+    
+    X_tr_fold = X_train(train_fold_idx, :);
+    y_tr_fold = y_train(train_fold_idx);
+    X_val_fold = X_train(val_fold_idx, :);
+    y_val_fold = y_train(val_fold_idx);
+    
+    model_fold = TreeBagger(100, X_tr_fold, y_tr_fold, ...
+        'Method', 'regression', 'OOBPrediction', 'off', ...
+        'MinLeafSize', 5, 'NumPredictorsToSample', 'all');
+    
+    y_pred_cell = predict(model_fold, X_val_fold);
+    if iscell(y_pred_cell)
+        y_pred_fold = cellfun(@str2double, y_pred_cell);
+    else
+        y_pred_fold = double(y_pred_cell);
+    end
+    
+    y_val_fold = y_val_fold(:);
+    y_pred_fold = y_pred_fold(:);
+    
+    all_y_test_cv = [all_y_test_cv; y_val_fold];
+    all_y_pred_cv = [all_y_pred_cv; y_pred_fold];
+    
+    ss_res = sum((y_val_fold - y_pred_fold).^2);
+    ss_tot = sum((y_val_fold - mean(y_val_fold)).^2);
+    r2 = 1 - (ss_res / ss_tot);
+    rmse = sqrt(mean((y_val_fold - y_pred_fold).^2));
+    mae = mean(abs(y_val_fold - y_pred_fold));
+    
+    r2_scores_cv(fold) = r2;
+    rmse_scores_cv(fold) = rmse;
+    mae_scores_cv(fold) = mae;
+    
+    fprintf('  ç¬¬%dæŠ˜ - RÂ²: %.4f, RMSE: %.4f, MAE: %.4f\n', fold, r2, rmse, mae);
+end
+
+mean_r2_cv = mean(r2_scores_cv);
+mean_rmse_cv = mean(rmse_scores_cv);
+mean_mae_cv = mean(mae_scores_cv);
+
+fprintf('\n==================== äº”æŠ˜äº¤å‰éªŒè¯ç»“æœï¼ˆè®­ç»ƒé›†ï¼‰====================\n');
+fprintf('å¹³å‡ RÂ²: %.4f\n', mean_r2_cv);
+fprintf('å¹³å‡ RMSE: %.4f\n', mean_rmse_cv);
+fprintf('å¹³å‡ MAE: %.4f\n', mean_mae_cv);
+fprintf('RÂ²æ ‡å‡†å·®: %.4f\n', std(r2_scores_cv));
+fprintf('RMSEæ ‡å‡†å·®: %.4f\n', std(rmse_scores_cv));
+fprintf('MAEæ ‡å‡†å·®: %.4f\n', std(mae_scores_cv));
+fprintf('================================================================\n');
+
+%% ==================== 4. è®­ç»ƒé›†äº¤å‰éªŒè¯æ•£ç‚¹å›¾ï¼ˆ70%è®­ç»ƒé›†ï¼‰ ====================
+y_test_cv_display = all_y_test_cv * 100;
+y_pred_cv_display = all_y_pred_cv * 100;
+
+figure('Position', [100, 100, 600, 500]);
+scatter(y_test_cv_display, y_pred_cv_display, 50, 'filled', 'MarkerFaceAlpha', 0.6);
+hold on;
+min_val_cv = min([y_test_cv_display; y_pred_cv_display]);
+max_val_cv = max([y_test_cv_display; y_pred_cv_display]);
+plot([min_val_cv, max_val_cv], [min_val_cv, max_val_cv], 'r--', 'LineWidth', 2);
+
+% çº¿æ€§æ‹ŸåˆåŠ95%ç½®ä¿¡åŒºé—´
+mdl_cv = fitlm(y_test_cv_display, y_pred_cv_display);
+[ypred_cv, yci_cv] = predict(mdl_cv, [min_val_cv; max_val_cv], 'Alpha', 0.05, 'Simultaneous', false);
+plot([min_val_cv; max_val_cv], ypred_cv, 'b-', 'LineWidth', 2);
+x_fill_cv = [[min_val_cv; max_val_cv]; flipud([min_val_cv; max_val_cv])];
+y_fill_cv = [yci_cv(:,1); flipud(yci_cv(:,2))];
+fill(x_fill_cv, y_fill_cv, [1 0.8 0.8], 'FaceAlpha', 0.5, 'EdgeColor', 'none');
+
+xlabel('çœŸå®å«æ°´é‡ (%)', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('é¢„æµ‹å«æ°´é‡ (%)', 'FontSize', 12, 'FontWeight', 'bold');
+title('çœŸå®å€¼ vs é¢„æµ‹å€¼ (äº”æŠ˜äº¤å‰éªŒè¯, è®­ç»ƒé›†)', 'FontSize', 14, 'FontWeight', 'bold');
+legend('æ•°æ®ç‚¹', '1:1çº¿', 'æ‹Ÿåˆçº¿', '95% ç½®ä¿¡åŒºé—´', 'Location', 'best');
+grid on;
+axis equal;
+
+r2_cv_total = corr(all_y_test_cv, all_y_pred_cv)^2;
+rmse_cv_total = sqrt(mean((all_y_test_cv - all_y_pred_cv).^2));
+mae_cv_total = mean(abs(all_y_test_cv - all_y_pred_cv));
+text(0.05, 0.95, sprintf('RÂ² = %.4f\nRMSE = %.4f\nMAE = %.4f', r2_cv_total, rmse_cv_total, mae_cv_total), ...
+    'Units', 'normalized', 'FontSize', 10, 'BackgroundColor', 'white', 'EdgeColor', 'black');
+
+saveas(gcf, 'Figure_è®­ç»ƒé›†æ•£ç‚¹å›¾.png');
+
+%% ==================== 5. è®­ç»ƒé›†äº¤å‰éªŒè¯æ®‹å·® Q-Q å›¾ï¼ˆçº¢è‰²è™šçº¿ç†è®ºçº¿ï¼‰ ====================
+residuals_train_cv = all_y_test_cv - all_y_pred_cv;
+
+figure('Position', [100, 150, 600, 500]);
+h = qqplot(residuals_train_cv);
+set(h(1), 'Marker', 'o', 'MarkerEdgeColor', 'none', ...
+    'MarkerFaceColor', [0.2 0.6 0.8], 'MarkerSize', 5);
+set(h(2), 'LineStyle', '--', 'Color', 'r', 'LineWidth', 1.5);
+legend([h(1), h(2)], {'æ•°æ®ç‚¹', 'ç†è®ºçº¿'}, 'Location', 'southeast');
+title('è®­ç»ƒé›†ï¼ˆ70%ï¼‰æ®‹å·® Q-Q å›¾ï¼ˆäº”æŠ˜äº¤å‰éªŒè¯åˆå¹¶ï¼‰', 'FontSize', 14, 'FontWeight', 'bold');
+xlabel('æ ‡å‡†æ­£æ€åˆ†ä½æ•°', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('æ®‹å·®åˆ†ä½æ•°', 'FontSize', 12, 'FontWeight', 'bold');
+grid on;
+saveas(gcf, 'Figure_è®­ç»ƒé›†æ®‹å·®QQå›¾.png');
+
+%% ==================== 6. è¶…å‚æ•°è°ƒä¼˜ï¼ˆç½‘æ ¼æœç´¢ + 5æŠ˜äº¤å‰éªŒè¯ï¼‰ ====================
+fprintf('\nå¼€å§‹è¶…å‚æ•°è°ƒä¼˜ï¼ˆç½‘æ ¼æœç´¢ + 5æŠ˜äº¤å‰éªŒè¯ï¼‰...\n');
+nTreesList = [50, 100, 200];
+minLeafList = [1, 5, 10];
+numPredToList = [1, 2, 3];
+
+paramResults = [];
+bestRMSE = inf;
+bestParams = struct();
+
+for nTrees = nTreesList
+    for minLeaf = minLeafList
+        for numPred = numPredToList
+            fprintf('æ­£åœ¨æµ‹è¯•: nTrees=%d, MinLeaf=%d, NumPred=%d\n', nTrees, minLeaf, numPred);
+            cv5 = cvpartition(length(y_train), 'KFold', 5);
+            rmse_folds = zeros(5,1);
+            for fold = 1:5
+                train_fold_idx = training(cv5, fold);
+                val_fold_idx   = test(cv5, fold);
+                X_tr_fold = X_train(train_fold_idx, :);
+                y_tr_fold = y_train(train_fold_idx);
+                X_val_fold = X_train(val_fold_idx, :);
+                y_val_fold = y_train(val_fold_idx);
+                model_fold = TreeBagger(nTrees, X_tr_fold, y_tr_fold, ...
+                    'Method', 'regression', 'MinLeafSize', minLeaf, ...
+                    'NumPredictorsToSample', numPred, 'OOBPrediction', 'off');
+                y_pred_cell = predict(model_fold, X_val_fold);
+                if iscell(y_pred_cell)
+                    y_pred_fold = cellfun(@str2double, y_pred_cell);
+                else
+                    y_pred_fold = double(y_pred_cell);
+                end
+                rmse_folds(fold) = sqrt(mean((y_val_fold - y_pred_fold).^2));
+            end
+            meanRMSE = mean(rmse_folds);
+            fprintf('  å¹³å‡RMSE = %.4f\n', meanRMSE);
+            paramResults = [paramResults; nTrees, minLeaf, numPred, meanRMSE];
+            if meanRMSE < bestRMSE
+                bestRMSE = meanRMSE;
+                bestParams.nTrees = nTrees;
+                bestParams.minLeaf = minLeaf;
+                bestParams.numPred = numPred;
+            end
+        end
+    end
+end
+
+fprintf('\n==================== æœ€ä¼˜è¶…å‚æ•° ====================\n');
+fprintf('æ ‘çš„æ•°é‡ (nTrees)         : %d\n', bestParams.nTrees);
+fprintf('æœ€å°å¶å­å¤§å° (MinLeafSize) : %d\n', bestParams.minLeaf);
+fprintf('æ¯æ¬¡åˆ†è£‚ç‰¹å¾æ•° (NumPred)   : %d\n', bestParams.numPred);
+fprintf('äº¤å‰éªŒè¯å¹³å‡RMSE           : %.4f\n', bestRMSE);
+fprintf('====================================================\n');
+
+paramTable = array2table(paramResults, ...
+    'VariableNames', {'nTrees', 'MinLeaf', 'NumPred', 'MeanRMSE'});
+writetable(paramTable, 'param_search_results.csv');
+
+%% ==================== 7. ä½¿ç”¨æœ€ä¼˜å‚æ•°è®­ç»ƒæœ€ç»ˆæ¨¡å‹ ====================
+fprintf('\nä½¿ç”¨æœ€ä¼˜å‚æ•°åœ¨å®Œæ•´è®­ç»ƒé›†ä¸Šè®­ç»ƒæœ€ç»ˆæ¨¡å‹...\n');
+final_model = TreeBagger(bestParams.nTrees, X_train, y_train, ...
+    'Method', 'regression', 'OOBPrediction', 'off', ...
+    'MinLeafSize', bestParams.minLeaf, ...
+    'NumPredictorsToSample', bestParams.numPred);
+
+%% ==================== 8. åœ¨éªŒè¯é›†ä¸Šè¯„ä¼°æœ€ç»ˆæ¨¡å‹ ====================
+fprintf('\nåœ¨éªŒè¯é›†ä¸Šè¯„ä¼°æœ€ç»ˆæ¨¡å‹...\n');
+y_pred_cell = predict(final_model, X_test);
+if iscell(y_pred_cell)
+    y_pred = cellfun(@str2double, y_pred_cell);
+else
+    y_pred = double(y_pred_cell);
+end
+y_pred = y_pred(:);
+y_test = y_test(:);
+
+ss_res = sum((y_test - y_pred).^2);
+ss_tot = sum((y_test - mean(y_test)).^2);
+r2_val   = 1 - ss_res/ss_tot;
+rmse_val = sqrt(mean((y_test - y_pred).^2));
+mae_val  = mean(abs(y_test - y_pred));
+
+fprintf('\n==================== éªŒè¯é›†æ€§èƒ½ ====================\n');
+fprintf('RÂ²  : %.4f\n', r2_val);
+fprintf('RMSE: %.4f\n', rmse_val);
+fprintf('MAE : %.4f\n', mae_val);
+fprintf('====================================================\n');
+
+%% ==================== 9. éªŒè¯é›†ç»“æœç‹¬ç«‹ç»˜å›¾ï¼ˆæ‰€æœ‰å›¾ç»Ÿä¸€å°ºå¯¸600x500ï¼‰ ====================
+% æ”¾å¤§100å€æ˜¾ç¤º
+y_test_display = y_test * 100;
+y_pred_display = y_pred * 100;
+residuals_val = y_test - y_pred;
+
+% å›¾A: éªŒè¯é›†æ•£ç‚¹å›¾ + ç½®ä¿¡åŒºé—´
+figure('Position', [200, 100, 600, 500]);
+scatter(y_test_display, y_pred_display, 50, 'filled', 'MarkerFaceAlpha', 0.6);
+hold on;
+min_val = min([y_test_display; y_pred_display]);
+max_val = max([y_test_display; y_pred_display]);
+plot([min_val max_val], [min_val max_val], 'r--', 'LineWidth', 2);
+mdl = fitlm(y_test_display, y_pred_display);
+[ypred_fit, yci] = predict(mdl, [min_val; max_val], 'Alpha', 0.05, 'Simultaneous', false);
+plot([min_val; max_val], ypred_fit, 'b-', 'LineWidth', 2);
+x_fill = [[min_val; max_val]; flipud([min_val; max_val])];
+y_fill = [yci(:,1); flipud(yci(:,2))];
+fill(x_fill, y_fill, [1 0.8 0.8], 'FaceAlpha', 0.5, 'EdgeColor', 'none');
+xlabel('çœŸå®å«æ°´é‡ (%)', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('é¢„æµ‹å«æ°´é‡ (%)', 'FontSize', 12, 'FontWeight', 'bold');
+title(sprintf('éªŒè¯é›†é¢„æµ‹ (RÂ²=%.3f, RMSE=%.3f, MAE=%.3f)', r2_val, rmse_val, mae_val));
+legend('æ•°æ®ç‚¹', '1:1çº¿', 'æ‹Ÿåˆçº¿', '95% ç½®ä¿¡åŒºé—´', 'Location', 'best');
+grid on; axis equal;
+text(0.05, 0.95, sprintf('RÂ² = %.4f\nRMSE = %.4f\nMAE = %.4f', r2_val, rmse_val, mae_val), ...
+    'Units', 'normalized', 'FontSize', 10, 'BackgroundColor', 'white', 'EdgeColor', 'black');
+saveas(gcf, 'Figure_éªŒè¯é›†æ•£ç‚¹å›¾.png');
+
+% å›¾B: éªŒè¯é›†æ®‹å·®ç›´æ–¹å›¾
+figure('Position', [300, 150, 600, 500]);
+histogram(residuals_val, 15, 'FaceColor', [0.2 0.6 0.8], 'EdgeColor', 'k');
+xlabel('æ®‹å·®', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('é¢‘æ•°', 'FontSize', 12, 'FontWeight', 'bold');
+title('éªŒè¯é›†æ®‹å·®åˆ†å¸ƒ', 'FontSize', 14, 'FontWeight', 'bold');
+grid on;
+saveas(gcf, 'Figure_éªŒè¯é›†æ®‹å·®åˆ†å¸ƒ.png');
+
+% å›¾C: éªŒè¯é›†æ®‹å·® vs é¢„æµ‹å€¼
+figure('Position', [400, 200, 600, 500]);
+scatter(y_pred, residuals_val, 30, 'filled', 'MarkerFaceAlpha', 0.6);
+hold on; yline(0, 'r-', 'LineWidth', 2);
+xlabel('é¢„æµ‹å€¼', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('æ®‹å·®', 'FontSize', 12, 'FontWeight', 'bold');
+title('æ®‹å·® vs é¢„æµ‹å€¼ (éªŒè¯é›†)', 'FontSize', 14, 'FontWeight', 'bold');
+grid on;
+saveas(gcf, 'Figure_æ®‹å·®vsé¢„æµ‹å€¼.png');
+
+% å›¾D: éªŒè¯é›†æ’åºå¯¹æ¯”å›¾
+figure('Position', [100, 250, 600, 500]);
+[~, sorted_idx] = sort(y_test);
+y_true_sorted = y_test(sorted_idx) * 100;
+y_pred_sorted = y_pred(sorted_idx) * 100;
+plot(1:length(y_test), y_true_sorted, 'r-o', 'LineWidth', 2, ...
+    'MarkerSize', 5, 'MarkerFaceColor', 'r', 'DisplayName', 'çœŸå®å«æ°´ç‡');
+hold on;
+plot(1:length(y_test), y_pred_sorted, 'b--^', 'LineWidth', 2, ...
+    'MarkerSize', 5, 'MarkerFaceColor', 'b', 'DisplayName', 'é¢„æµ‹å«æ°´ç‡');
+xlabel('æ ·æœ¬åºå· (æŒ‰çœŸå®å€¼æ’åº)', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('å«æ°´é‡ (%)', 'FontSize', 12, 'FontWeight', 'bold');
+title('é¢„æµ‹å€¼ä¸çœŸå®å€¼å¯¹æ¯” (æ’åºå)', 'FontSize', 14, 'FontWeight', 'bold');
+legend('Location', 'best', 'FontSize', 10);
+grid on;
+saveas(gcf, 'Figure_æ’åºå¯¹æ¯”å›¾.png');
+
+% å›¾E: éªŒè¯é›†æ®‹å·® Q-Q å›¾ï¼ˆçº¢è‰²è™šçº¿ç†è®ºçº¿ï¼‰
+figure('Position', [200, 300, 600, 500]);
+h_val = qqplot(residuals_val);
+set(h_val(1), 'Marker', 'o', 'MarkerEdgeColor', 'none', ...
+    'MarkerFaceColor', [0.2 0.6 0.8], 'MarkerSize', 5);
+set(h_val(2), 'LineStyle', '--', 'Color', 'r', 'LineWidth', 1.5);
+legend([h_val(1), h_val(2)], {'æ•°æ®ç‚¹', 'ç†è®ºçº¿'}, 'Location', 'southeast');
+title('éªŒè¯é›†ï¼ˆ30%ï¼‰æ®‹å·® Q-Q å›¾', 'FontSize', 14, 'FontWeight', 'bold');
+xlabel('æ ‡å‡†æ­£æ€åˆ†ä½æ•°', 'FontSize', 12, 'FontWeight', 'bold');
+ylabel('æ®‹å·®åˆ†ä½æ•°', 'FontSize', 12, 'FontWeight', 'bold');
+grid on;
+saveas(gcf, 'Figure_éªŒè¯é›†æ®‹å·®QQå›¾.png');
+
+%% ==================== 10. ä¿å­˜ç»“æœ ====================
+cv_results_train = struct();
+cv_results_train.r2_scores = r2_scores_cv;
+cv_results_train.rmse_scores = rmse_scores_cv;
+cv_results_train.mae_scores = mae_scores_cv;
+cv_results_train.mean_r2 = mean_r2_cv;
+cv_results_train.mean_rmse = mean_rmse_cv;
+cv_results_train.mean_mae = mean_mae_cv;
+cv_results_train.all_y_test = all_y_test_cv;
+cv_results_train.all_y_pred = all_y_pred_cv;
+save('cross_validation_train.mat', 'cv_results_train');
+
+save('final_model_tuned.mat', 'final_model', 'bestParams');
+
+val_results = table(y_test, y_pred, residuals_val, ...
+    'VariableNames', {'True', 'Predicted', 'Residual'});
+writetable(val_results, 'validation_predictions.csv');
+
+%% ==================== 11. ç”Ÿæˆç»¼åˆæŠ¥å‘Š ====================
+report_filename = 'model_report_final.txt';
+fid = fopen(report_filename, 'w');
+fprintf(fid, 'éšæœºæ£®æ—å«æ°´é‡é¢„æµ‹æ¨¡å‹æœ€ç»ˆæŠ¥å‘Š\n');
+fprintf(fid, '================================================\n');
+fprintf(fid, 'ç”Ÿæˆæ—¶é—´: %s\n', datestr(now));
+fprintf(fid, 'æ•°æ®æ–‡ä»¶: %s\n', filename);
+fprintf(fid, 'æ€»æ ·æœ¬æ•°: %d\n', length(y));
+fprintf(fid, 'è®­ç»ƒé›†æ ·æœ¬æ•°: %d\n', length(y_train));
+fprintf(fid, 'éªŒè¯é›†æ ·æœ¬æ•°: %d\n', length(y_test));
+fprintf(fid, '\n--- è®­ç»ƒé›†äº”æŠ˜äº¤å‰éªŒè¯ï¼ˆé»˜è®¤å‚æ•°ï¼‰ ---\n');
+fprintf(fid, 'å¹³å‡ RÂ² : %.4f Â± %.4f\n', mean_r2_cv, std(r2_scores_cv));
+fprintf(fid, 'å¹³å‡ RMSE: %.4f Â± %.4f\n', mean_rmse_cv, std(rmse_scores_cv));
+fprintf(fid, 'å¹³å‡ MAE : %.4f Â± %.4f\n', mean_mae_cv, std(mae_scores_cv));
+fprintf(fid, '\n--- è¶…å‚æ•°è°ƒä¼˜ç»“æœ ---\n');
+fprintf(fid, 'æœ€ä¼˜è¶…å‚æ•°:\n');
+fprintf(fid, '  æ ‘çš„æ•°é‡ (nTrees)         : %d\n', bestParams.nTrees);
+fprintf(fid, '  æœ€å°å¶å­å¤§å° (MinLeafSize) : %d\n', bestParams.minLeaf);
+fprintf(fid, '  æ¯æ¬¡åˆ†è£‚ç‰¹å¾æ•° (NumPred)   : %d\n', bestParams.numPred);
+fprintf(fid, 'è°ƒä¼˜äº¤å‰éªŒè¯å¹³å‡RMSE       : %.4f\n', bestRMSE);
+fprintf(fid, '\n--- ç‹¬ç«‹éªŒè¯é›†æ€§èƒ½ ---\n');
+fprintf(fid, 'RÂ²  : %.4f\n', r2_val);
+fprintf(fid, 'RMSE: %.4f\n', rmse_val);
+fprintf(fid, 'MAE : %.4f\n', mae_val);
+fprintf(fid, '\n--- è¾“å‡ºæ–‡ä»¶ ---\n');
+fprintf(fid, '1. cross_validation_train.mat\n');
+fprintf(fid, '2. final_model_tuned.mat\n');
+fprintf(fid, '3. validation_predictions.csv\n');
+fprintf(fid, '4. param_search_results.csv\n');
+fprintf(fid, '5. model_report_final.txt\n');
+fprintf(fid, '6. Figure_è®­ç»ƒé›†æ•£ç‚¹å›¾.png       - è®­ç»ƒé›†(70%)\n');
+fprintf(fid, '7. Figure_è®­ç»ƒé›†æ®‹å·®QQå›¾.png     - è®­ç»ƒé›†Q-Q (çº¢è‰²è™šçº¿)\n');
+fprintf(fid, '8. Figure_éªŒè¯é›†æ•£ç‚¹å›¾.png       - éªŒè¯é›†(30%)\n');
+fprintf(fid, '9. Figure_éªŒè¯é›†æ®‹å·®åˆ†å¸ƒ.png     - éªŒè¯é›†ç›´æ–¹å›¾\n');
+fprintf(fid, '10. Figure_æ®‹å·®vsé¢„æµ‹å€¼.png      - éªŒè¯é›†æ®‹å·®\n');
+fprintf(fid, '11. Figure_æ’åºå¯¹æ¯”å›¾.png        - éªŒè¯é›†æ’åº\n');
+fprintf(fid, '12. Figure_éªŒè¯é›†æ®‹å·®QQå›¾.png    - éªŒè¯é›†Q-Q (çº¢è‰²è™šçº¿)\n');
+fclose(fid);
+
+fprintf('\næ‰€æœ‰ç»“æœå·²ä¿å­˜ã€‚æŠ¥å‘Šæ–‡ä»¶: %s\n', report_filename);
+fprintf('ç¨‹åºæ‰§è¡Œå®Œæˆï¼\n');
