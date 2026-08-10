@@ -74,4 +74,3 @@ article after its final bibliographic details become available.
 ## License
 
 The code is released under the MIT License. See `LICENSE`.
-

@@ -1,0 +1,24 @@
+# MATLAB temporary and generated files
+*.asv
+*.autosave
+*.m~
+*.mat
+*.fig
+
+# Generated tables and reports
+*.csv
+*.xls
+*.xlsx
+*.txt
+
+# Input and generated images
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini

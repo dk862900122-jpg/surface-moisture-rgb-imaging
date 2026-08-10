@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article and this code repository."
+title: "MATLAB code for normalized RGB imaging and surface-moisture prediction at exposed earthen sites"
+type: software
+authors:
+  - family-names: Sun
+    given-names: Manli
+  - family-names: Deng
+    given-names: Kai
+  - family-names: Mao
+    given-names: Weijia
+  - family-names: Liang
+    given-names: Chuxin
+version: 1.0.0
+date-released: 2026-08-10
+repository-code: "https://github.com/dk862900122-jpg/surface-moisture-rgb-imaging"
+license: MIT
