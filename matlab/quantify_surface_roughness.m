@@ -1,18 +1,18 @@
-clc;
-clear;
-close all;
-
-
 %% =====================================================
 % Pore Evolution Deterioration Index (PEDI)
 %
-% PEDI = 0.5P + 0.3N + 0.2C
+% PEDI = 0.5Pa + 0.3Np + 0.2Cp
 %
-% P : pore area ratio
-% N : pore density
-% C : pore connectivity
+% Pa : pore area ratio
+% Np : pore density
+% Cp : pore connectivity
 %
 % =====================================================
+
+
+clear;
+clc;
+close all;
 
 
 
@@ -21,30 +21,22 @@ close all;
 % ===========================
 
 files={
-    'soil1.jpg'
-    'soil2.jpg'
-    'soil3.jpg'
-    'soil4.jpg'
+'soil1.jpg'
+'soil2.jpg'
+'soil3.jpg'
+'soil4.jpg'
 };
 
 
-Nimg=length(files);
+N=length(files);
 
 
 
-%% ===========================
 % 初始化
-% ===========================
 
-
-P=zeros(Nimg,1);
-
-N=zeros(Nimg,1);
-
-C=zeros(Nimg,1);
-
-MeanPore=zeros(Nimg,1);
-
+Pa=zeros(N,1);
+Np=zeros(N,1);
+Cp=zeros(N,1);
 
 
 
@@ -53,35 +45,29 @@ MeanPore=zeros(Nimg,1);
 % =====================================================
 
 
-for i=1:Nimg
+for i=1:N
 
 
     img=imread(files{i});
 
 
-
     if size(img,3)==3
-
         gray=rgb2gray(img);
-
     else
-
         gray=img;
-
     end
-
 
 
     gray=im2double(gray);
 
 
 
-
-
-    %% -----------------------------------------
+    %% ==========================================
     % 1. 局部背景校正
-    % ------------------------------------------
+    % ==========================================
 
+
+    % 去除光照影响
 
     background=imgaussfilt(gray,30);
 
@@ -90,17 +76,19 @@ for i=1:Nimg
 
 
 
+    % 归一化
+
     diffImg=(diffImg-min(diffImg(:)))...
-        /(max(diffImg(:))-min(diffImg(:))+eps);
+        /(max(diffImg(:))-min(diffImg(:)));
 
 
 
+    %% ==========================================
+    % 2. 自适应孔洞识别
+    % ==========================================
 
 
-    %% -----------------------------------------
-    % 2. 孔洞识别
-    % ------------------------------------------
-
+    % 均值+标准差阈值
 
     mu=mean(diffImg(:));
 
@@ -110,53 +98,42 @@ for i=1:Nimg
     k=1.2;
 
 
-
     bw=diffImg>mu+k*sigma;
 
 
 
-    % 删除噪声
+    %% 去除小颗粒
 
     bw=bwareaopen(bw,80);
 
 
 
-    % 孔洞连接
+    %% 形态连接
 
     bw=imclose(bw,...
         strel('disk',4));
 
 
 
-    % 填充
+    %% 填充
 
     bw=imfill(bw,'holes');
 
 
 
+    %% ==========================================
+    % 3. 孔洞面积率 Pa
+    % ==========================================
 
 
-
-    %% -----------------------------------------
-    % 3. P 孔洞面积率
-    %
-    % P=Ap/A
-    % ------------------------------------------
-
-
-    P(i)=sum(bw(:))/numel(bw);
+    Pa(i)=sum(bw(:))/numel(bw);
 
 
 
 
-
-
-
-    %% -----------------------------------------
-    % 4. N 孔洞密度
-    %
-    % N=Np/A
-    % ------------------------------------------
+    %% ==========================================
+    % 4. 孔洞数量密度 Np
+    % ==========================================
 
 
     CC=bwconncomp(bw);
@@ -165,19 +142,14 @@ for i=1:Nimg
     poreNum=CC.NumObjects;
 
 
-    N(i)=poreNum/numel(bw);
+    Np(i)=poreNum/numel(bw);
 
 
 
 
-
-
-
-    %% -----------------------------------------
-    % 5. C 孔洞连通性
-    %
-    % 最大孔洞面积/总孔洞面积
-    % ------------------------------------------
+    %% ==========================================
+    % 5. 最大孔洞连通率 Cp
+    % ==========================================
 
 
     stats=regionprops(bw,...
@@ -186,45 +158,33 @@ for i=1:Nimg
 
     if isempty(stats)
 
-        C(i)=0;
-
-        MeanPore(i)=0;
-
+        Cp(i)=0;
 
     else
 
-
-        area=[stats.Area];
-
-
-        C(i)=max(area)/sum(area);
+        areas=[stats.Area];
 
 
-        MeanPore(i)=mean(area);
-
-
+        Cp(i)=max(areas)/sum(areas);
 
     end
 
 
 
 
+    %% ==========================================
+    % 显示识别结果
+    % ==========================================
 
 
-
-    %% -----------------------------------------
-    % 显示
-    % ------------------------------------------
-
-
-    figure
+    figure;
 
 
     subplot(1,3,1)
 
     imshow(gray)
 
-    title(['Original ',num2str(i)])
+    title(['Image ',num2str(i)])
 
 
 
@@ -248,20 +208,21 @@ end
 
 
 
-
-
-
 %% =====================================================
 % 归一化
 % =====================================================
 
 
-Pn=normalization(P);
+Pa_n=normalize(Pa,...
+    'range',[0 1]);
 
-Nn=normalization(N);
 
-Cn=normalization(C);
+Np_n=normalize(Np,...
+    'range',[0 1]);
 
+
+Cp_n=normalize(Cp,...
+    'range',[0 1]);
 
 
 
@@ -272,19 +233,9 @@ Cn=normalization(C);
 
 
 PEDI=...
-    0.5*Pn+...
-    0.3*Nn+...
-    0.2*Cn;
-
-
-
-% 再归一化
-
-PEDI=normalization(PEDI);
-
-
-
-
+0.5*Pa_n+...
+0.3*Np_n+...
+0.2*Cp_n;
 
 
 
@@ -293,145 +244,57 @@ PEDI=normalization(PEDI);
 % =====================================================
 
 
-fprintf('\n==============================================================\n')
-
-fprintf('Image        P        N        C        PEDI\n')
-
-fprintf('==============================================================\n')
-
-
-
-for i=1:Nimg
-
-
-    fprintf('%s   %.5f   %.5f   %.5f   %.5f\n',...
-        files{i},...
-        P(i),...
-        N(i),...
-        C(i),...
-        PEDI(i));
-
-
-end
-
-
-fprintf('==============================================================\n')
-
-
-
-
-
-
-%% =====================================================
-% 表格输出
-% =====================================================
-
-
-Result=table(...
-    files,...
-    P,...
-    N,...
-    C,...
-    MeanPore,...
-    Pn,...
-    Nn,...
-    Cn,...
-    PEDI,...
-    ...
-    'VariableNames',...
-    {
-    'Image',...
-    'Pore_area_ratio_P',...
-    'Pore_density_N',...
-    'Connectivity_C',...
-    'Mean_pore_area',...
-    'P_norm',...
-    'N_norm',...
-    'C_norm',...
-    'PEDI'
-    });
-
+Result=table((1:N)',...
+Pa,...
+Np,...
+Cp,...
+Pa_n,...
+Np_n,...
+Cp_n,...
+PEDI,...
+'VariableNames',...
+{'Image',...
+'PoreArea',...
+'PoreDensity',...
+'Connectivity',...
+'Pa_norm',...
+'Np_norm',...
+'Cp_norm',...
+'PEDI'});
 
 
 disp(Result)
 
 
 
-
-writetable(Result,...
-    'PEDI_results.xlsx');
-
-
-
-
-
-
 %% =====================================================
-% PEDI绘图
+% 绘制PEDI
 % =====================================================
 
 
-figure
+figure;
 
 
 bar(PEDI)
 
 
+xlabel('Image number',...
+'FontName','Times New Roman',...
+'FontSize',14);
+
+
+ylabel('PEDI',...
+'FontName','Times New Roman',...
+'FontSize',14);
+
 
 set(gca,...
-    'XTickLabel',files)
+'FontName','Times New Roman',...
+'FontSize',12);
 
 
-xlabel('Image')
+xticks(1:4)
 
 
-ylabel('PEDI')
+grid on;
 
-
-title('Pore Evolution Deterioration Index')
-
-
-grid on
-
-
-
-
-
-
-%% =====================================================
-% 排序
-% =====================================================
-
-
-[value,index]=sort(PEDI,'descend');
-
-
-fprintf('\nDeterioration ranking:\n')
-
-
-for i=1:Nimg
-
-
-    fprintf('%d : %s   %.4f\n',...
-        i,...
-        files{index(i)},...
-        value(i));
-
-end
-
-
-
-
-
-%% =====================================================
-% 归一化函数
-% =====================================================
-
-
-function y=normalization(x)
-
-
-y=(x-min(x))./(max(x)-min(x)+eps);
-
-
-end
